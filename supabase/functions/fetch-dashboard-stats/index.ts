@@ -90,10 +90,9 @@ Deno.serve(async (req: Request) => {
     console.log('Fetching dashboard stats...');
 
     // Fetch all data in parallel
-    let plantRoomsResult, assetsResult, tasksResult, logsResult, submissionsResult, partsResult;
+    let plantRoomsResult, assetsResult, tasksResult, logsResult, submissionsResult, partsResult, teamResult;
     
     try {
-      let teamResult;
       [
         plantRoomsResult,
         assetsResult,
