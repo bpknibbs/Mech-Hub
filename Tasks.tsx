@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from './src/lib/supabase';
 import { useAuth } from './src/contexts/AuthContext';
-import { runTaskAutomation } from './taskAutomation';
+import { runTaskAutomation } from './src/utils/taskAutomation';
 import { notifyTaskAssigned } from './notifications';
 import { 
   ClipboardList as ClipboardDocumentListIcon,
@@ -511,25 +511,4 @@ const Tasks: React.FC = () => {
         })}
       </div>
 
-      {filteredTasks.length === 0 && (
-        <div className="text-center py-24">
-          <div className="bg-gradient-to-br from-primary-50 via-white to-accent-50 rounded-3xl p-16 max-w-lg mx-auto shadow-2xl border border-primary-200">
-            <div className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-8 inline-block mb-8 shadow-xl">
-              <ClipboardDocumentListIcon className="h-12 w-12 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-              {tasks.length === 0 ? 'No tasks found' : 'No matching tasks'}
-            </h3>
-            <p className="text-secondary-600 mb-10 leading-relaxed text-lg">
-              {tasks.length === 0 
-                ? 'Tasks will appear here once they are created.' 
-                : 'Try adjusting your search or filters.'}
-            </p>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default Tasks;
+      {filt
