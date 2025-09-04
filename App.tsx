@@ -1,22 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './src/contexts/AuthContext';
+import { AuthProvider, useAuth } from '@/contexts/AuthContext';
 import AuthForm from './AuthForm';
-import Layout from './src/components/Layout.tsx';
-import Dashboard from './src/components/Dashboard';
-import PlantRooms from './src/components/PlantRooms';
-import PlantRoomDetails from './src/components/PlantRoomDetails';
-import Assets from './src/components/Assets';
-import AssetDetails from './src/components/AssetDetails';
-import Tasks from './src/components/Tasks';
-import Logs from './src/components/Logs';
-import Team from './src/components/Team';
-import Forms from './src/components/Forms';
-import DRS from './src/components/DRS';
-import AvailabilityPortal from './src/components/AvailabilityPortal';
-import PartsManagement from './src/components/PartsManagement';
-import TaskForm from './src/components/TaskForm';
-import TaskDetails from './src/components/TaskDetails';
+import Layout from '@/components/Layout';
+import Dashboard from '@/components/Dashboard';
+import PlantRooms from '@/components/PlantRooms';
+import PlantRoomDetails from '@/components/PlantRoomDetails';
+import Assets from '@/components/Assets';
+import AssetDetails from '@/components/AssetDetails';
+import Tasks from '@/components/Tasks';
+import Logs from '@/components/Logs';
+import Team from '@/components/Team';
+import Forms from '@/components/Forms';
+import DRS from '@/components/DRS';
+import AvailabilityPortal from '@/components/AvailabilityPortal';
+import PartsManagement from '@/components/PartsManagement';
+import TaskForm from '@/components/TaskForm';
+import TaskDetails from '@/components/TaskDetails';
 import './index.css';
 
 const AppContent: React.FC = () => {
