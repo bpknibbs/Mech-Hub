@@ -728,7 +728,7 @@ const PlantRooms: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-100 to-primary-200 border-2 border-primary-300 rounded-xl text-sm font-bold text-primary-800 hover:from-primary-200 hover:to-primary-300 transition-all duration-300 shadow-lg transform hover:scale-105"
+                      className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-100 to-primary-200 border-2 border-primary-300 text-primary-800 rounded-xl text-sm font-bold hover:from-primary-200 hover:to-primary-300 transition-all duration-300 shadow-lg transform hover:scale-105"
                     >
                       View Map
                     </a>
@@ -801,7 +801,7 @@ const PlantRooms: React.FC = () => {
             <div className="relative">
               <button
                 onClick={() => setShowAddForm(true)}
-                className="inline-flex items-center px-8 py-4 border border-transparent shadow-2xl text-lg font-bold rounded-2xl text-white bg-gradient-to-r from-primary-600 via-primary-700 to-accent-700 hover:from-primary-700 hover:via-primary-800 hover:to-accent-800 focus:outline-none focus:ring-4 focus:ring-primary-300 transition-all duration-300 transform hover:scale-110 hover:shadow-3xl"
+                className="inline-flex items-center px-8 py-4 border border-transparent shadow-2xl text-lg font-bold rounded-2xl text-white bg-gradient-to-r from-primary-600 via-primary-700 to-accent-700 hover:from-primary-700 hover:via-accent-800 hover:to-accent-800 focus:outline-none focus:ring-4 focus:ring-primary-300 transition-all duration-300 transform hover:scale-110 hover:shadow-3xl"
               >
                 <PlusIcon className="-ml-1 mr-3 h-6 w-6" />
                 Add Plant Room
