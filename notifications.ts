@@ -1,4 +1,4 @@
-import { supabase } from '../lib/supabase';
+import { supabase } from './src/lib/supabase';
 
 interface NotificationOptions {
   type: 'task_assigned' | 'task_overdue' | 'task_completed' | 'general';
