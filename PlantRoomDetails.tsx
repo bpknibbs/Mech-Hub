@@ -13,7 +13,7 @@ import {
   PhotoIcon,
   HomeIcon
 } from '@heroicons/react/24/outline';
-import { format } from 'date-fns';
+import { format, addMonths } from 'date-fns';
 
 interface PlantRoomDetail {
   id: string;
@@ -503,7 +503,7 @@ const PlantRoomDetails: React.FC = () => {
                 </p>
                 {plantRoom.last_lgsr_date && (
                   <p className="text-sm text-warning-600 mt-1">
-                    Next LGSR due: {format(new Date(new Date(plantRoom.last_lgsr_date).getTime() + (6 * 30 * 24 * 60 * 60 * 1000)), 'MMM dd, yyyy')}
+                    Next LGSR due: {format(addMonths(new Date(plantRoom.last_lgsr_date), 6), 'MMM dd, yyyy')}
                   </p>
                 )}
               </div>
