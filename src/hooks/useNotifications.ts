@@ -3,7 +3,7 @@ import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { registerPushNotifications, showBrowserNotification } from '../utils/notifications';
 
-interface Notification {
+export interface Notification {
   id: string;
   type: string;
   title: string;
