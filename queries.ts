@@ -22,7 +22,6 @@ export const fetchDashboardStats = async (userProfile?: TeamMember): Promise<{ s
     const response = await retryFetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/fetch-dashboard-stats`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ userProfile })
@@ -78,7 +77,6 @@ export const fetchRecentActivity = async (): Promise<any[]> => {
     const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/fetch-recent-activity`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({})
@@ -109,7 +107,6 @@ export const fetchUpcomingTasks = async (): Promise<any[]> => {
     const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/fetch-upcoming-tasks`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({})
