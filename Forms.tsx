@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { supabase } from '../lib/supabase';
-import { useAuth } from '../contexts/AuthContext';
-import { createDefaultTemplates } from '../utils/defaultFormTemplates';
-import { createDomesticLgsrTemplate } from '../utils/domesticLgsrTemplate';
-import { createNonDomesticLgsrTemplate } from '../utils/nonDomesticLgsrTemplate';
+import { supabase } from './src/lib/supabase';
+import { useAuth } from './src/contexts/AuthContext';
+import { createDefaultTemplates } from './src/utils/defaultFormTemplates';
+import { createDomesticLgsrTemplate } from './src/utils/domesticLgsrTemplate';
+import { createNonDomesticLgsrTemplate } from './src/utils/nonDomesticLgsrTemplate';
 import {
   PlusIcon,
   DocumentTextIcon,

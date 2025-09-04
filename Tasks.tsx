@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { supabase } from '../lib/supabase';
-import { useAuth } from '../contexts/AuthContext';
-import { runTaskAutomation } from '../utils/taskAutomation';
-import { notifyTaskAssigned } from '../utils/notifications';
+import { supabase } from './src/lib/supabase';
+import { useAuth } from './src/contexts/AuthContext';
+import { runTaskAutomation } from './src/utils/taskAutomation';
+import { notifyTaskAssigned } from './src/utils/notifications';
 import { 
   ClipboardList as ClipboardDocumentListIcon,
   CheckCircle as CheckCircleIcon,

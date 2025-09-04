@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from './src/contexts/AuthContext';
 import { useState } from 'react';
-import { useNotifications } from '../src/hooks/useNotifications';
+import { useNotifications } from './src/hooks/useNotifications';
 import NotificationCenter from './NotificationCenter';
 import { 
   Home,

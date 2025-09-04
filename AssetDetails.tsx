@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { supabase } from '../lib/supabase';
-import { Database } from '../lib/database.types';
+import { supabase } from './src/lib/supabase';
+import { Database } from './src/lib/database.types';
 import {
   Settings as CogIcon,
   ArrowLeft as ArrowLeftIcon,

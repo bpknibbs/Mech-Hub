@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { supabase } from '../lib/supabase';
-import { useAuth } from '../contexts/AuthContext';
+import { supabase } from './src/lib/supabase';
+import { useAuth } from './src/contexts/AuthContext';
 import {
   UserGroupIcon,
   ChartBarIcon,
