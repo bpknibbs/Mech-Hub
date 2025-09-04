@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { supabase } from './src/lib/supabase';
-import { useAuth } from '../src/contexts/AuthContext';
-import { uploadFile } from '../utils/storage';
+import { useAuth } from './src/contexts/AuthContext';
+import { uploadFile } from './src/utils/storage';
 import {
   ClipboardDocumentListIcon,
   ArrowLeftIcon,
