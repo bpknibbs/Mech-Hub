@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './src/contexts/AuthContext';
-import AuthForm from './components/AuthForm';
+import AuthForm from './AuthForm';
 import Layout from './components/Layout';
 import Dashboard from './components/Dashboard';
 import PlantRooms from './components/PlantRooms';
