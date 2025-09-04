@@ -510,5 +510,3 @@ const Tasks: React.FC = () => {
           );
         })}
       </div>
-
-      {filt
