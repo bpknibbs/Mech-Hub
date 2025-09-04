@@ -133,7 +133,3 @@ export const fetchUpcomingTasks = async (): Promise<any[]> => {
     return [];
   }
 };
-import { fetchDashboardStats, fetchRecentActivity, fetchUpcomingTasks } from './supabaseService';
-import type { DashboardStats, ChartData, TeamMember } from './types';
-
-export { fetchDashboardStats, fetchRecentActivity, fetchUpcomingTasks };
