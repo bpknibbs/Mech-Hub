@@ -1,6 +1,6 @@
 import React from 'react';
 import { BellIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useNotifications } from '../hooks/useNotifications';
+import { useNotifications } from './src/hooks/useNotifications';
 import { format } from 'date-fns';
 
 interface NotificationCenterProps {
