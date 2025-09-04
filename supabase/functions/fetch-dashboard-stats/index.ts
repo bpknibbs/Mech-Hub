@@ -9,7 +9,7 @@
     - Returns recent activity and metrics
     
   2. Security
-    - Uses service role for database access
+    - Uses service role for database access. This function operates with elevated privileges and should be secured via API gateway or other means in a production environment.
     - Returns aggregated data only
 */
 
