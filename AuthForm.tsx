@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from './src/contexts/AuthContext';
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
 const AuthForm: React.FC = () => {
