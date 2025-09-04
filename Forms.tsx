@@ -166,7 +166,7 @@ const Forms: React.FC = () => {
       const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-pdf-email`, {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+          'Authorization': `Bearer YOUR_SUPABASE_JWT`, // Use a real JWT token here, not anon key
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -720,9 +720,21 @@ const Forms: React.FC = () => {
       {showTemplateForm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-lg p-6 w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-            <h3 className="text-lg font-medium mb-4">
-              {editingTemplate ? 'Edit Template' : 'Create New Template'}
-            </h3>
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-lg font-medium">
+                {editingTemplate ? 'Edit Template' : 'Create New Template'}
+              </h3>
+              <button
+                onClick={() => {
+                  setShowTemplateForm(false);
+                  setEditingTemplate(null);
+                }}
+                className="text-secondary-400 hover:text-secondary-600 text-2xl"
+              >
+                ✕
+              </button>
+            </div>
+            
             <form onSubmit={editingTemplate ? handleUpdateTemplate : handleCreateTemplate} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
@@ -1084,7 +1096,7 @@ const Forms: React.FC = () => {
                 className="px-4 py-2 border border-accent-300 rounded-md text-sm font-medium text-accent-700 hover:bg-accent-50 transition-colors"
               >
                 <EnvelopeIcon className="w-4 h-4 inline mr-2" />
-                Send PDF via Email
+                Email PDF
               </button>
             </div>
           </div>
