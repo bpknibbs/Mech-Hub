@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/contexts/AuthContext';
 import AuthForm from './AuthForm';
-import Layout from '@/components/Layout';
+import Layout from './src/components/Layout';
 import Dashboard from '@/components/Dashboard';
 import PlantRooms from '@/components/PlantRooms';
 import PlantRoomDetails from '@/components/PlantRoomDetails';
