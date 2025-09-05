@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from './src/lib/supabase';
 import { useAuth } from './src/contexts/AuthContext';
-import { createFollowUpTask } from './taskAutomation';
+import { createFollowUpTask } from './src/utils/taskAutomation';
 import { 
   PlusIcon, 
   DocumentTextIcon, 
